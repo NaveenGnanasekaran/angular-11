@@ -1,12 +1,31 @@
-<h1>Thunder</h1>
-<!-- <div>
-    <app-boxa labelValue="location" [data]="location" (onBoxDataChange)="onBoxValueChange($event)"></app-boxa>
+<h1>Welcome to Angular {{title}} from {{location}}</h1>
+<hr>
+<div>
+    <app-boxa labelValue="Location" [data]="location" (onBoxDataChange)="onBoxValueChange($event)"></app-boxa>
 </div>
 <div>
     <app-boxa [data]="location"></app-boxa>
-</div> -->
-<!-- <app-boxa></app-boxa> -->
-<!-- <app-demo></app-demo> -->
-<!-- <app-counter-app></app-counter-app>
-<app-customer-form></app-customer-form> -->
-<!-- <app-employee-form></app-employee-form> -->
+</div>
+<div>
+    <app-counter-display [count]="total"></app-counter-display>
+</div>
+<div>
+    <app-hit-button [label]="hits"></app-hit-button>
+</div>
+<div>
+    <app-counter-app></app-counter-app>
+</div>
+<div>
+    <app-customer-form></app-customer-form>
+</div>
+<div>
+    <app-employee-form></app-employee-form>
+</div>
+<div>
+    <app-book-list></app-book-list>
+</div>
+<div>
+    <app-book-catlog></app-book-catlog>
+</div>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
